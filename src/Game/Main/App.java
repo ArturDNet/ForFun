@@ -6,6 +6,7 @@ import javax.swing.*;
 
 public class App extends JFrame {
 
+
     public App() {
 
         initUI();
@@ -13,13 +14,14 @@ public class App extends JFrame {
 
     private void initUI() {
 
-        add(new OldBoard());
-        setResizable(false);
-        pack();
+        add(new Board());
+        setTitle("Breakout");
 
-        setTitle("ForFunApp");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        setSize(Commons.GameAreaWidth, Commons.GameAreaHeight);
         setLocationRelativeTo(null);
+        setResizable(false);
+        setVisible(true);
     }
 
     public static void main(String[] args) {
@@ -27,8 +29,8 @@ public class App extends JFrame {
         EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-                App example = new App();
-                example.setVisible(true);
+                App game = new App();
+                game.setVisible(true);
             }
         });
     }

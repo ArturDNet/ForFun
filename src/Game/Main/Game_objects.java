@@ -1,6 +1,7 @@
 package Game.Main;
 
 import java.awt.Rectangle;
+import java.awt.geom.Ellipse2D;
 
 public class Game_objects {
 
@@ -43,5 +44,9 @@ public class Game_objects {
 
     Rectangle getHitbox() {
         return new Rectangle(x,y,width,height);
+    }
+
+    Ellipse2D getBallBounds() {
+        return new Ellipse2D.Double(x,y,width,height);
     }
 }
