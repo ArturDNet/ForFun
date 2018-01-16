@@ -13,7 +13,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
-public class Board extends JPanel
+public class OldBoard extends JPanel
         implements ActionListener {
 
     private int randomX = ThreadLocalRandom.current().nextInt(0,630);
@@ -40,7 +40,7 @@ public class Board extends JPanel
         this.yAxis = yAxis;
     }
 
-    public Board() {
+    public OldBoard() {
 
         initBoard();
     }

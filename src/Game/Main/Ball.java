@@ -6,11 +6,13 @@ public class Ball extends Game_objects implements Commons {
     private int yMove;
 
     /* Shape ball = new Ellipse2D.Double(x, y, 10, 10);*/
+
     public Ball() {
         xMove = 1;
         yMove = -1;
         width = 10;
         height = 10;
+
         resetBall();
     }
 

@@ -13,7 +13,7 @@ public class App extends JFrame {
 
     private void initUI() {
 
-        add(new Board());
+        add(new OldBoard());
         setResizable(false);
         pack();
 
