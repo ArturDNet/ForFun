@@ -2,12 +2,12 @@ package Game.Main;
 
 import java.awt.event.KeyEvent;
 
-public class Paddle extends Game_objects implements Commons{
+public class Paddle extends Game_objects implements Commons {
 
     private int paddleX;
 
     public Paddle() {
-        width = 40;
+        width = 50;
         height = 10;
 
         resetPaddle();
@@ -29,6 +29,7 @@ public class Paddle extends Game_objects implements Commons{
             x = GameAreaWidth - width;
         }
     }
+
     public void keyPressed (KeyEvent e) {
 
         int key = e.getKeyCode();

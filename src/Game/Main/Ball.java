@@ -28,7 +28,7 @@ public class Ball extends Game_objects implements Commons {
             setYMove(1);
         }
         if (x == 0 || x == GameAreaWidth - (width / 2)) {
-            setXMove(getxMove()*-1);
+            setXMove(getXMove()*-1);
         }
     }
 
@@ -40,11 +40,11 @@ public class Ball extends Game_objects implements Commons {
         this.yMove = yMove;
     }
 
-    public int getxMove() {
+    public int getXMove() {
         return xMove;
     }
 
-    public int getyMove() {
+    public int getYMove() {
         return yMove;
     }
 }

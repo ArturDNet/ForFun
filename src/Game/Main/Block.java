@@ -1,6 +1,6 @@
 package Game.Main;
 
-public class Block extends Game_objects {
+public class Block extends Game_objects implements Commons {
 
     private boolean destroyed;
 

@@ -46,7 +46,7 @@ public class Game_objects {
         return new Rectangle(x,y,width,height);
     }
 
-    Ellipse2D getBallBounds() {
+    Ellipse2D getBallShape() {
         return new Ellipse2D.Double(x,y,width,height);
     }
 }
